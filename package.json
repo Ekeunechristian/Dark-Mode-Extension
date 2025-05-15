@@ -10,10 +10,30 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.7",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.3",
     "tailwindcss": "^4.1.7",
     "typescript": "^5.8.3",
     "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "browserslist": "^4.24.5",
+    "caniuse-lite": "^1.0.30001718",
+    "electron-to-chromium": "^1.5.154",
+    "esbuild": "^0.25.4",
+    "escalade": "^3.2.0",
+    "fdir": "^6.4.4",
+    "fraction.js": "^4.3.7",
+    "nanoid": "^3.3.11",
+    "node-releases": "^2.0.19",
+    "normalize-range": "^0.1.2",
+    "picocolors": "^1.1.1",
+    "picomatch": "^4.0.2",
+    "postcss-value-parser": "^4.2.0",
+    "rollup": "^4.40.2",
+    "source-map-js": "^1.2.1",
+    "tinyglobby": "^0.2.13",
+    "update-browserslist-db": "^1.1.3"
   }
 }

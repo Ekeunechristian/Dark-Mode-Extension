@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dark theme styles */
+
+html, body {
+  @apply bg-gray-900 text-gray-100 ;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  @apply text-blue-400 hover:text-blue-300;
+}
+
+input, textarea, select, button {
+  @apply bg-gray-800 text-white border border-gray-700;
+}
+
+div, section, article, aside, header, footer, nav {
+  @apply bg-gray-900 text-gray-100;
+}
+
+table {
+  @apply text-gray-200 ;
+}
+
+th, td {
+  @apply border-gray-700 ;
+}
+
+pre, code {
+  @apply bg-gray-800 text-green-300 ;
+}
+
+img {
+  filter: brightness(90%) contrast(110%);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4b5563;
+  border-radius: 4px;
+}
