@@ -1,16 +1,15 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vite';
 
 export default defineConfig({
   build: {
     rollupOptions: {
-      input: {
-        content: 'src/content.ts',
-      },
+      input: 'src/content.ts',
       output: {
-        entryFileNames: '[name].js',
-      },
+        format: 'iife', // ✅ Forces non-module output
+        entryFileNames: 'content.js', // filename must match manifest
+      }
     },
     outDir: 'dist',
     emptyOutDir: true,
-  },
-})
+  }
+});

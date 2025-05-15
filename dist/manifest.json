@@ -1,16 +1,13 @@
 {
   "manifest_version": 3,
-  "name": "DARK-MODE-EXTENSION",
+  "name": "Dark Mode Extension",
   "version": "1.0",
-  "description": "A dark mode theme extension using Tailwind and TypeScript.",
+  "description": "Applies a dark theme to websites",
+  "permissions": ["scripting", "activeTab"],
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
       "js": ["content.js"]
     }
-  ],
-  "host_permissions": ["<all_urls>"],
-  "icons": {
-    "128": "icons/icon128.png"
-  }
+  ]
 }
