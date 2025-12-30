@@ -1,0 +1,47 @@
+:root {
+  --dm-bg: #121212;
+  --dm-surface: #1e1e1e;
+  --dm-text: #e0e0e0;
+  --dm-text-muted: #a0a0a0;
+  --dm-border: #2a2a2a;
+  --dm-accent: #4fc3f7;
+}
+
+html[data-darkmode="on"],
+html[data-darkmode="on"] body {
+  background-color: var(--dm-bg) !important;
+  color: var(--dm-text) !important;
+}
+
+/* Text */
+html[data-darkmode="on"] p,
+html[data-darkmode="on"] span,
+html[data-darkmode="on"] div {
+  color: var(--dm-text);
+}
+
+/* Links */
+html[data-darkmode="on"] a {
+  color: var(--dm-accent) !important;
+}
+
+/* Inputs */
+html[data-darkmode="on"] input,
+html[data-darkmode="on"] textarea,
+html[data-darkmode="on"] select {
+  background-color: var(--dm-surface) !important;
+  color: var(--dm-text) !important;
+  border-color: var(--dm-border) !important;
+}
+
+/* Borders */
+html[data-darkmode="on"] hr {
+  border-color: var(--dm-border);
+}
+
+/* Images & video untouched */
+html[data-darkmode="on"] img,
+html[data-darkmode="on"] video,
+html[data-darkmode="on"] canvas {
+  filter: none !important;
+}

@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Universal Smart Dark Mode",
+  "version": "2.0",
+  "description": "Smart, accessible dark mode that works per-site without breaking layouts",
+  "permissions": ["storage", "activeTab"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["dist/content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
